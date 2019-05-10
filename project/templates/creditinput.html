@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src = "../js/bundle.js"></script>  
+
+	<title> Credit Analysis Machine</title>
+</head>
+
+  
+	
+	<style type="text/css">
+		#pic{
+	visibility: hidden;
+}
+#bool{
+	color: white;
+}
+
+#h1TAG{
+	color:orange;
+	font-size: 50px;
+	text-decoration: none;
+}
+#xxx {
+	font-size: 100px;
+	font-family: verdana;
+}
+#h2TAG{
+	font-family: Helvetica, SF Pro Display, Verdana, Geneva, Tahoma, sans-serif;
+	padding: 50px;
+}
+.list{
+	color:green;
+	font-family: "Courier New", Times, serif;
+}
+.header{
+    padding: 10px;
+	text-align: center;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+.topnav {
+    overflow: hidden;
+	background-color: black;
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 99%;
+  }
+
+.sticky + .topnav {
+	padding-top: 10000000000px;
+ }
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  
+}
+
+.topnav a:hover {
+    background-color: yellow;
+    color: black;
+}
+.topnav b {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  
+}
+
+.topnav b:hover {
+    background-color: yellow;
+    color: black;
+}
+.body{
+	font-size: 40px;
+	font-family: Helvetica, SF Pro Display, Verdana, Geneva, Tahoma, sans-serif;
+	margin: 50px;
+}
+.row{
+	border: 1px solid black;
+    display: inline-block;
+    float: left;
+    padding: 5px;
+    font-size: 30px;
+}
+.form{
+	font-size: 30px;
+	font-family: Helvetica, SF Pro Display, Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+	height: 50%;
+	width: 50%;
+	transition: width 2s, height 4s;
+}
+/*img:hover{
+	height: 100%;
+	width: 53%;
+	z-index:5;
+}*/
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+  }
+
+input{
+	margin-bottom: 1em;
+	display:block;
+}
+button{
+	display:block;
+}
+/*option{
+	display:block;
+}
+button.hover{
+	z-index: 10;
+}*/
+
+table{
+margin-left: 500px;
+border: 5px solid red;
+
+font-size:50px;
+
+}
+
+#holder{
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+
+#holder .tooltiptext{
+visibility: hidden;
+width: 120px;
+text-align: center;
+border-radius: 5px;
+position: absolute;
+z-index: 1;
+}
+
+#holder:hover #submit .tooltiptext{
+	visibility: visible;
+}
+	</style>
+<script>
+
+function doWork()
+{
+var age = document.forms["fform"]["age"].value;
+
+
+if(age == "")
+{
+  alert("Fill out everything");
+  console.log("empty");
+}
+
+
+
+
+}
+function myFunction() 
+{
+  alert("Hello\nHow are you?");
+}
+</script>
+<body>
+<p style="text-align: center">
+<a href= "HelloWorld.html" id= "h1TAG" class ="header"> AI Credit </a>
+</p>
+
+<div class="topnav" id = "myHeader">
+
+<a href="../HelloWorld.html"> Home </a>
+  <a href="../input/">Credit Analysis Machine</a>
+  <a id = "reason" href="../info/" >Why Blockchain?</a>
+
+   <b href="#" id="signout-button" class = "signout-button">Sign Out</b>
+</div>
+<p id="test" class = "form"></p>
+<div class= "form" id= "inputarea">
+
+<p> Use your own dataset to train a new neural network, or use our prexisting network
+
+<form action="../display/" method="post">{% csrf_token %}
+Age: <input type="text" name="age"/>
+Phone Number: <input type="text" name="number"/>
+  <div>
+    <button>Enter</button>
+  </div>
+</form>
+
+</body>
+
+</html>
