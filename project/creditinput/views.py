@@ -7,7 +7,7 @@ def creditinputView(request):
 	 return render(request, 'creditinput.html')
 
 def compileView(request):
-	results= request.POST
+	results= request.POST['name']
 	return render(request, 'display.html', {'userdata': results})
 
 

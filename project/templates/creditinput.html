@@ -1,208 +1,142 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
-<head>
-	<script src = "../js/bundle.js"></script>  
+<html lang="en">
 
-	<title> Credit Analysis Machine</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>AI Credit</title>
+
+	<!-- Google font -->
+		<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/owl.theme.default.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
 
-  
-	
-	<style type="text/css">
-		#pic{
-	visibility: hidden;
-}
-#bool{
-	color: white;
-}
-
-#h1TAG{
-	color:orange;
-	font-size: 50px;
-	text-decoration: none;
-}
-#xxx {
-	font-size: 100px;
-	font-family: verdana;
-}
-#h2TAG{
-	font-family: Helvetica, SF Pro Display, Verdana, Geneva, Tahoma, sans-serif;
-	padding: 50px;
-}
-.list{
-	color:green;
-	font-family: "Courier New", Times, serif;
-}
-.header{
-    padding: 10px;
-	text-align: center;
-	font-family: "Arial Black", Gadget, sans-serif;
-}
-.topnav {
-    overflow: hidden;
-	background-color: black;
-}
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 99%;
-  }
-
-.sticky + .topnav {
-	padding-top: 10000000000px;
- }
-
-/* Style the topnav links */
-.topnav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-  
-}
-
-.topnav a:hover {
-    background-color: yellow;
-    color: black;
-}
-.topnav b {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-  
-}
-
-.topnav b:hover {
-    background-color: yellow;
-    color: black;
-}
-.body{
-	font-size: 40px;
-	font-family: Helvetica, SF Pro Display, Verdana, Geneva, Tahoma, sans-serif;
-	margin: 50px;
-}
-.row{
-	border: 1px solid black;
-    display: inline-block;
-    float: left;
-    padding: 5px;
-    font-size: 30px;
-}
-.form{
-	font-size: 30px;
-	font-family: Helvetica, SF Pro Display, Verdana, Geneva, Tahoma, sans-serif;
-}
-img{
-	height: 50%;
-	width: 50%;
-	transition: width 2s, height 4s;
-}
-/*img:hover{
-	height: 100%;
-	width: 53%;
-	z-index:5;
-}*/
-
-.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-  }
-
-input{
-	margin-bottom: 1em;
-	display:block;
-}
-button{
-	display:block;
-}
-/*option{
-	display:block;
-}
-button.hover{
-	z-index: 10;
-}*/
-
-table{
-margin-left: 500px;
-border: 5px solid red;
-
-font-size:50px;
-
-}
-
-#holder{
-	position: relative;
-	display: inline-block;
-	border-bottom: 1px dotted black;
-}
-
-#holder .tooltiptext{
-visibility: hidden;
-width: 120px;
-text-align: center;
-border-radius: 5px;
-position: absolute;
-z-index: 1;
-}
-
-#holder:hover #submit .tooltiptext{
-	visibility: visible;
-}
-	</style>
-<script>
-
-function doWork()
-{
-var age = document.forms["fform"]["age"].value;
-
-
-if(age == "")
-{
-  alert("Fill out everything");
-  console.log("empty");
-}
-
-
-
-
-}
-function myFunction() 
-{
-  alert("Hello\nHow are you?");
-}
-</script>
 <body>
-<p style="text-align: center">
-<a href= "HelloWorld.html" id= "h1TAG" class ="header"> AI Credit </a>
-</p>
+	<!-- Header -->
+	
+		
+		<!-- /Background Image -->
 
-<div class="topnav" id = "myHeader">
+		<!-- Nav -->
+		<nav >
+			<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="{% static 'img/white1.png' %}" alt="logo">
+							
+						</a>
+					</div>
+			<div class="container">
 
-<a href="../HelloWorld.html"> Home </a>
-  <a href="../input/">Credit Analysis Machine</a>
-  <a id = "reason" href="../info/" >Why Blockchain?</a>
+				<div class="navbar-header">
+					<!-- Logo -->
+					
+					<!-- /Logo -->
 
-   <b href="#" id="signout-button" class = "signout-button">Sign Out</b>
-</div>
-<p id="test" class = "form"></p>
-<div class= "form" id= "inputarea">
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
 
-<p> Use your own dataset to train a new neural network, or use our prexisting network
+				<!--  Main navigation  -->
+			
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="/projectPage">Home</a></li>
+					<li><a href="/projectPage">About the Algorithm</a></li>
+					<li><a href="/projectPage">Why Blockstack</a></li>
+					<li><a href="/projectPage">Team</a></li>
+					<li><a href = "/projectPage">Contact</a></li>
+				</ul>
+		
+				<!-- /Main navigation -->
 
-<form action="../display/" method="post">{% csrf_token %}
-Age: <input type="text" name="age"/>
-Phone Number: <input type="text" name="number"/>
-  <div>
-    <button>Enter</button>
-  </div>
-</form>
+			</div>
+		</nav>
+		<!-- /Nav -->
+
+	
+
+
+	
+	
+	<!-- Contact -->
+	<div id="contact" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section-header -->
+				<div class="section-header text-center">
+					<h2 class="title">Enter in your information</h2>
+				</div>
+				<!-- /Section-header -->
+
+			
+				<!-- /contact -->
+
+				<!-- contact form -->
+				<div class="col-md-8 col-md-offset-2">
+					<form class="contact-form" action = "/display/" method = "post"> {% csrf_token %}
+						<input  name = "name" type="text" class="input" placeholder="Name">
+						<input name = "email" type="email" class="input" placeholder="Email">
+						<input name = "subject" type="text" class="input" placeholder="Subject">
+						<textarea name = "message" class="input" placeholder="Message"></textarea>
+						<button class="main-btn">Submit</button>
+					</form>
+				</div>
+				<!-- /contact form -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Contact -->
+
+
+	
+
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	
+	<!-- /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.magnific-popup.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+
 
 </body>
 

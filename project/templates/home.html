@@ -34,23 +34,24 @@
 	<!-- Header -->
 	<header id="home">
 		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('./img/background1.jpg');">
+		<div class="bg-img" style="background-image: url('{% static 'img/background.jpg' %}');">
 			<div class="overlay"></div>
 		</div>
 		<!-- /Background Image -->
 
 		<!-- Nav -->
 		<nav id="nav" class="navbar nav-transparent">
+			<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="{% static 'img/white1.png' %}" alt="logo">
+							
+						</a>
+					</div>
 			<div class="container">
 
 				<div class="navbar-header">
 					<!-- Logo -->
-					<div class="navbar-brand">
-						<a href="index.html">
-							<img class="logo" src="img/logo.png" alt="logo">
-							<img class="logo-alt" src="img/logo-alt.png" alt="logo">
-						</a>
-					</div>
+					
 					<!-- /Logo -->
 
 					<!-- Collapse nav button -->
@@ -85,7 +86,9 @@
 							<h1 class="white-text">AI Credit</h1>
 							<p class="white-text"> Using complex machine learning algorithims, AI Credit delivers accurate credit anaylsis. 
 							</p>
-							<button class="white-btn">Get Started!</button>
+							<a href = "/input">
+							<button class="white-btn" href = "/creditinput" >See your credit worthiness!</button>
+						</a>
 						</div>
 					</div>
 					<!-- /home content -->
