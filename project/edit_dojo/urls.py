@@ -16,15 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from info.views import infoView
-from todo.views import todoView
+from projectPage.views import projectPageView
 from signin.views import signinView
 from creditinput.views import creditinputView, compileView
 urlpatterns = [
     path('', signinView),
     path('signin/', signinView),
-    path('admin/', todoView),
     path('info/', infoView),
-    path('todo/', todoView),
+    path('projectPage/', projectPageView),
     path('input/', creditinputView),
     path('display/', compileView),
 

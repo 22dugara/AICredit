@@ -21,12 +21,17 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '=w97wtf^%gmqeik6$vgwi3!)$7ctx16@1sju2(wz&gos%u-sld'
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    
+]
 
 # Application definition
 
@@ -38,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'info',
-    'todo',
+    'projectPage',
     'signin',
     'creditinput',
 ]
