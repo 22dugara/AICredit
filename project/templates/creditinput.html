@@ -102,20 +102,19 @@
 					<form id="form" class="contact-form" action = "/display/" method = "post"> {% csrf_token %}
 						<input  name = "name" type="text" class="input" placeholder="Name">
 						<input name = "email" type="email" class="input" placeholder="Email">
-						<input name = "subject" type="text" class="input" placeholder="Subject">
 						<input name = "amountofmoney" type="number" class="input" placeholder="Amount of Money">
 						<select name="term" form="form">
 						  <option value="36months">36 months</option>
 						  <option value="60months">60 months</option>
 						</select>
+						<input name = "interest rate" type="text" class="input" placeholder="Interest rate">
 						<input name = "installment" type="text" class="input" placeholder="Installment">
-						<select name="term" form="form">
+						<select name="home" form="form">
 						  <option value="rent">Rent</option>
 						  <option value="own">Own</option>
 						  <option value="notapplicable">Not Applicable</option>
 						</select>
 						<input name="income" type = "text" class="input" placeholder="Income">
-						<textarea name = "message" class="input" placeholder="Message"></textarea>
 						<button class="main-btn">Submit</button>
 					</form>
 				</div>
