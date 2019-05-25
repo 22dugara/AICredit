@@ -42,7 +42,7 @@
 		<!-- Nav -->
 		<nav id="nav" class="navbar nav-transparent">
 			<div class="navbar-brand">
-						<a href="index.html">
+						<a href="">
 							<img class="logo" src="{% static 'img/white1.png' %}" alt="logo">
 							
 						</a>
@@ -68,6 +68,7 @@
 					<li><a href="#service">Why Blockstack</a></li>
 					<li><a href="#team">Team</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><a id = "signout-button">Sign Out</a></li>
 				</ul>
 				<!-- /Main navigation -->
 
@@ -120,7 +121,7 @@
 				<div class="col-md-4">
 					<div class="about">
 						<h3>Machine Learning libraries used</h3>
-						<p>Ryan add something bout Keras is good</p>
+						<p>We used three main machine learning libraries in our project, along with many other mathematical and data science-related libraries. The three machine learning libraries that we used were TenserFlow, Keras and scikit-learn. TenserFlow is a symbolic math library, and Keras uses functions in TenserFlow and builds off of them. In this way, TenserFlow and Keras work together to create deep learning models, like our credit analysis machine. Scikit-learn is another machine learning library which performs a number of useful functions, such as regression, dimensionality reduction and clustering. </p>
 					</div>
 				</div>
 				<!-- /about -->
@@ -129,7 +130,7 @@
 				<div class="col-md-4">
 					<div class="about">
 						<h3>Neural Network Shape</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+						<p>Our machine uses an artificial neural network to perform its analysis. We used the machine learning library Keras to define the shape of our neural network. Using Keras, we made the neural network have one layer of hidden neutrons, which adds to the accuracy rate of the machine.</p>
 					</div>
 				</div>
 				<!-- /about -->
@@ -138,7 +139,7 @@
 				<div class="col-md-4">
 					<div class="about">
 						<h3>Accuracy Rate</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+						<p>After many iterations of our credit analysis machine, we have achieved an accuracy rate of over 70%. Over time, as the machine learns from new sets of data, this rate will increase much more.</p>
 					</div>
 				</div>
 				<!-- /about -->
@@ -317,16 +318,7 @@
 				</div>
 				<!-- /contact -->
 
-				<!-- contact form -->
-				<div class="col-md-8 col-md-offset-2">
-					<form class="contact-form">
-						<input type="text" class="input" placeholder="Name">
-						<input type="email" class="input" placeholder="Email">
-						<input type="text" class="input" placeholder="Subject">
-						<textarea class="input" placeholder="Message"></textarea>
-						<button class="main-btn">Send message</button>
-					</form>
-				</div>
+			
 				<!-- /contact form -->
 
 			</div>
@@ -355,6 +347,8 @@
 	<script type="text/javascript" src="{% static 'js/owl.carousel.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/jquery.magnific-popup.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/bundle.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/security.js' %}"></script>
 
 
 

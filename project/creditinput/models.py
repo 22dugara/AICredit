@@ -79,7 +79,11 @@ def machinelearn(amountofmoney, term, interestrate, installment, homeowenership,
 	interestrate = float(interestrate)
 	installment = float(installment)
 	income = float(income)
-	return classifier.predict(np.matrix([amountofmoney, amountofmoney, 1 , interestrate, installment, 1, income, 1]))[0][0]
+	if classifier.predict(np.matrix([amountofmoney, amountofmoney, 1 , interestrate, installment, 1, income, 1]))[0][0] > 1:
+		response = 100
+	if classifier.predict(np.matrix([amountofmoney, amountofmoney, 1 , interestrate, installment, 1, income, 1]))[0][0] < 1:
+		response = classifier.predict(np.matrix([amountofmoney, amountofmoney, 1 , interestrate, installment, 1, income, 1]))[0][0] * 75
+	return response
 
    
 
