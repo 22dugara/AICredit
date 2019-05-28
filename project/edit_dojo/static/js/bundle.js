@@ -27419,7 +27419,7 @@ function redirectToSignInWithAuthRequest() {
  */
 function redirectToSignIn() {
   var redirectURI = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : window.location.origin + '/';
-  var manifestURI = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : window.location.origin + '/manifest.json';
+  var manifestURI = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : window.location.origin + '/static/json/manifest.json';
   var scopes = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : _authConstants.DEFAULT_SCOPE;
 
   var authRequest = (0, _index.makeAuthRequest)(generateAndStoreTransitKey(), redirectURI, manifestURI, scopes);
@@ -27638,7 +27638,7 @@ var VERSION = '1.3.1';
 function makeAuthRequest() {
   var transitPrivateKey = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : (0, _index.generateAndStoreTransitKey)();
   var redirectURI = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : window.location.origin + '/';
-  var manifestURI = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : window.location.origin + '/manifest.json';
+  var manifestURI = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : window.location.origin + '/static/json/manifest.json';
   var scopes = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : _authConstants.DEFAULT_SCOPE;
   var appDomain = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : window.location.origin;
   var expiresAt = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : (0, _index.nextHour)().getTime();

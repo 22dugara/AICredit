@@ -18,12 +18,14 @@ from django.urls import path
 from projectPage.views import projectPageView
 from signin.views import signinView
 from creditinput.views import creditinputView, compileView
+from signin.views import manifestView
 urlpatterns = [
     path('', signinView),
     path('signin/', signinView),
     path('projectPage/', projectPageView),
     path('input/', creditinputView),
     path('display/', compileView),
+    path('manifest.json', manifestView)
 
 
 ]
