@@ -14,4 +14,3 @@ def compileView(request):
 	global graph
 	with graph.as_default():
 		return render(request, 'display.html', {'userdata': machinelearn(request.POST['amountofmoney'], request.POST['term'],request.POST['interest rate'], request.POST['installment'], request.POST['home'], request.POST['income'])})
-	
