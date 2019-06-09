@@ -20,7 +20,6 @@ protobuf==3.7.1
 psycopg2-binary==2.8.2
 python-dateutil==2.8.0
 pytz==2019.1
-PyYAML==5.1
 scikit-learn==0.21.1
 scipy==1.2.1
 simplejson==3.16.0
@@ -31,6 +30,4 @@ tensorflow==1.13.1
 tensorflow-estimator==1.13.0
 termcolor==1.1.0
 tf-estimator-nightly==1.14.0.dev2019030115
-Werkzeug==0.15.4
-whitenoise==4.1.2
 xlrd==1.2.0
